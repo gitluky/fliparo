@@ -15,14 +15,13 @@ module Fliparo
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
-    config.middleware.insert_before 0, Rack::Cors do
+    config.middleware.use Rack::Cors do
       allow do
         origins '*'
-        resource(
-          '*',
+        resource '*',
           headers: :any,
-          methods: [:get, :patch, :put, :delete, :post, :options]
-          )
+          expose: ['access-token', 'expiry', 'token-type', 'uid', 'client'],
+          methods: [:get, :post, :options, :delete, :put]
       end
     end
   end
