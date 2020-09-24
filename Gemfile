@@ -26,7 +26,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'rack-cors'
 gem 'dotenv-rails'
+# Token based authentication
 gem 'devise_token_auth'
+# Netflix's serializer
+gem 'fast_jsonapi'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
