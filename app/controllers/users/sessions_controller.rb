@@ -24,10 +24,10 @@ class Users::SessionsController < Devise::SessionsController
   #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
   # end
 
-  private
+  # private
 
-  def respond_with(resource, _opts = {})
-    render json: resource
-  end
+  # def respond_with(resource, _opts = {})
+  #   render json: resource
+  # end
   
 end
