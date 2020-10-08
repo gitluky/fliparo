@@ -31,6 +31,9 @@ gem 'devise_token_auth'
 # Netflix's serializer
 gem 'fast_jsonapi'
 
+#omniauth
+gem 'omniauth-facebook'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
