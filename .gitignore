@@ -4,6 +4,7 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+/fliparo-react-native/assets/mock_images/*
 # Ignore .env file
 .env
 # Ignore bundler config.
